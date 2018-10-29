@@ -1,0 +1,69 @@
+<link href="https://blackrockdigital.github.io/startbootstrap-grayscale/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://blackrockdigital.github.io/startbootstrap-grayscale/css/grayscale.min.css" rel="stylesheet">
+<link href="https://blackrockdigital.github.io/startbootstrap-grayscale/css/grayscale.min.css" rel="stylesheet">
+<style type="text/css">
+  
+  h3{
+    text-shadow:  2px 2px #000000;
+    text-align: center;
+  }
+ </style>
+
+
+<nav style="background-color: #000000; height: 5px; " id="mainNav">
+  <span style="font-size:30px;cursor:pointer;color:grey;" (click)="openNav()">&#9776; Menu</span> 
+
+</nav>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a routerLink="/Home">Home</a>
+  <a routerLink="/Info" >Additional-Info</a>
+  <a routerLink="/Contact" >Contact-Us</a>
+  
+</div>
+<header ></header>
+
+   
+    <div class=" d-flex h-100 align-items-center masthead">
+      <div class="mx-auto text-center">
+     
+     
+             <h1 class="text-white-50 mx-auto mt-2 mb-5" style="margin-top: 10px;">ThankYou!!</h1>
+      <h2 class="text-white-50 mx-auto mt-2 mb-5">{{'Awaken To A Different World!!!! '| uppercase}}</h2>    
+        <form role="form" class="text-white-50 mx-auto mt-2 mb-5" method="get" action="info.html">
+        <div class="form-group">
+            <div style="font-size: 30px;">
+                <span (click)="toggle()">Off of :</span>{{amount | currency:format}} ({{discount | percent}})&nbsp;&nbsp;
+                <span (click)="toggleFormat()">ON:</span>{{date | date:format1}}
+              </div><br>
+          <div>
+         <span>Contact:&nbsp;+91-8641234845</span><div><span id="name"></span></div><br>
+          </div>
+          <div>
+            <span>E-mail:&nbsp;{{'v.tourism@gmail.com'| lowercase}}</span><div id="2" ></div><br>
+          </div>
+          
+        <div >
+          <span >Facebook:</span>V-Tourism<div id="3" ></div>
+        </div>
+        </div>
+        </form>
+          
+
+     
+    </div>
+  </div>
+ 
+
+  <div class="footer">
+      <p appTwitter>#Goa- This Is Goa @thisisgoa<br>
+        TourismGoa: #Goa Ashwem beach, also known as Ashvem beach is one of the best kept secrets of North Goa. 
+        <br>#travel#Holidays#India</p>
+      </div>
+
+
+
+
